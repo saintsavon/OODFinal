@@ -51,6 +51,7 @@ public class Client {
                     } else if (answer.equals("3")) {
                         desktopType = "Casual Browsing Desktop";
                         System.out.println("You have chosen the casual browsing desktop.");
+                        break;
                     } else {
                         continue;
                     }
