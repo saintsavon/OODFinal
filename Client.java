@@ -4,8 +4,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import Desktop.Desktop;
-
 public class Client {
     static String laptopType="";
     public static void main(String[] args) {
@@ -56,6 +54,7 @@ public class Client {
                         continue;
                     }
                 }
+                scanner.close();
                 System.out.println("");
 
                 // Storage options selections loop
@@ -80,6 +79,7 @@ public class Client {
                     }
                      else break;
                 }
+                scan.close();
 
                 System.out.println("Your storage amount selections have been saved.");
                 System.out.println("\n");
@@ -107,6 +107,7 @@ public class Client {
                         System.out.println("You have chosen to watercool your CPU & GPU.");
                     } else break;
                 }
+                scan2.close();
 
                 System.out.println("Your watercooling selections have been saved.");
                 System.out.println("");
@@ -158,6 +159,8 @@ public class Client {
                         break;
                     }
                 }
+                scanLaptop.close();
+                
                 System.out.println("The selection of laptops is completed.");
                 System.out.println("");
 
