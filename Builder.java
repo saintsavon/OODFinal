@@ -48,7 +48,7 @@ public class Builder {
         for (int i=0; i < storageList.length; i++) {
             String storage = storageList[i];
             if (storage.equals("500GB")){
-                desktop = new SSD500(desktop); // Why doesn't this work
+                desktop = new SSD500(desktop); 
             }
             else if (storage.equals("1TB")){
                 desktop = new SSD1TB(desktop);
@@ -66,7 +66,7 @@ public class Builder {
             else if (water.equals("GPU")){
                 desktop = new GPUCool(desktop);
             }
-            else if (water.equals("CPUGPUCool")){ // Also figure out these names
+            else if (water.equals("CPUGPUCool")){ 
                 desktop = new CPUGPUCool(desktop);
             }
         }

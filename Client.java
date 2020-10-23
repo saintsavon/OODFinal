@@ -93,6 +93,8 @@ public class Client {
                     System.out.println("(4) I would not like water cooling/ have finished selecting my parts.");
 
                     int value = scan2.nextInt();
+                    System.out.println(""); // Spacing
+
                     if (value == 1) {
                         waterCoolList.add("CPUCool");
                         System.out.println("You have chosen to watercool your CPU.");
@@ -114,8 +116,8 @@ public class Client {
                 String[] waterCoolArr = new String[waterCoolList.size()];
                 waterCoolArr = waterCoolList.toArray(waterCoolArr);
 
-                DesktopBuild desktopBuild = new DesktopBuild(builder, desktopType, storageList, waterCoolList);
-                consultant.takeOrder(desktopType); // Why no working
+                DesktopBuild desktopBuild = new DesktopBuild(builder, desktopType, storageArr, waterCoolArr);
+                consultant.takeOrder(desktopBuild); // Why no working
             }
 
             else if(a==2) {
@@ -130,6 +132,7 @@ public class Client {
                     System.out.println("(5) Razer - $159.99");
                     System.out.println("(6) I would not like a laptop.");
                     int laptop = scanLaptop.nextInt();
+                    System.out.println(""); // Spacing
                     if(laptop==1){
                         laptopType="Lenovo";
                         System.out.println("You have chosen the Lenovo laptop.");
