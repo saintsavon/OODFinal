@@ -11,7 +11,7 @@ public class LaptopOrder implements Command{
 
     @Override
     public void buildReady() {
-        Builder.laptopType = order; // Should this really be static?
+        builder.laptopType = order; // Should this really be static?
         builder.getOrder("Laptop");
     }
     

@@ -8,10 +8,10 @@ import Desktop.DesktopDecorator.SSD1TB;
 import Desktop.DesktopDecorator.SSD2TB;
 
 public class Builder {
-    public static String desktopType="";
-    public static String laptopType="";
-    public static String storageList[] = null;
-    public static String waterCoolList[] = null;
+    public String desktopType="";
+    public String laptopType="";
+    public String storageList[] = null;
+    public String waterCoolList[] = null;
 
     Desktop desktop;
     Laptop laptop;
