@@ -4,6 +4,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import Desktop.Desktop;
+
 public class Client {
     static String laptopType="";
     public static void main(String[] args) {
@@ -105,6 +107,15 @@ public class Client {
 
                 System.out.println("Your watercooling selections have been saved.");
                 System.out.println("");
+
+                String[] storageArr = new String[storageList.size()];
+                storageArr = storageList.toArray(storageArr);
+
+                String[] waterCoolArr = new String[waterCoolList.size()];
+                waterCoolArr = waterCoolList.toArray(waterCoolArr);
+
+                DesktopBuild desktopBuild = new DesktopBuild(builder, desktopType, storageList, waterCoolList);
+                consultant.takeOrder(desktopType); // Why no working
             }
 
             else if(a==2) {
@@ -152,6 +163,7 @@ public class Client {
 
             else{
                 System.out.println("-------------------------------------------------------------------------------");
+                
                 System.out.println("GLAD WE COULD BE OF SERVICE TO YOU TODAY!");
                 break;
             }
