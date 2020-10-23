@@ -41,7 +41,7 @@ public class Client {
                     }
 
                     if (answer.equals("1")) {
-                        desktopType = "High End Work Station"; // Make sure this is consistent throughout
+                        desktopType = "High End Work Station Desktop"; // Make sure this is consistent throughout
                         System.out.println("You have chosen the high end work station.");
                         break;
                     } else if (answer.equals("2")) {
@@ -58,7 +58,7 @@ public class Client {
                 System.out.println("");
 
                 // Storage options selections loop
-                System.out.println("-------------------- ADDITIONAL COMPONENTS --------------------");
+                System.out.println("-------------------- ADDITIONAL COMPONENTS --------------------\n");
                 Scanner scan = new Scanner(System.in);
                 for (int i = 0; i < 2; i++) {
                     System.out.println("-------------------- Storage Amounts --------------------");
@@ -81,7 +81,7 @@ public class Client {
                 }
 
                 System.out.println("Your storage amount selections have been saved.");
-                System.out.println("");
+                System.out.println("\n");
 
                 // Water cooling selections loop
                 Scanner scan2 = new Scanner(System.in);
@@ -122,14 +122,14 @@ public class Client {
 
             else if(a==2) {
                 Scanner scanLaptop = new Scanner(System.in);
-                System.out.println("-------------------- Laptops --------------------");
+                System.out.println("-------------------- Laptops --------------------\n");
                 for (int i = 0; i < 1; i++) {
                     System.out.println("-------------------- Available Laptops --------------------");
                     System.out.println("(1) Lenovo - $799.99");
                     System.out.println("(2) MSI - $849.99");
                     System.out.println("(3) MacbookAir - $999.99");
                     System.out.println("(4) MacbookPro - $1249.99");
-                    System.out.println("(5) Razer - $159.99");
+                    System.out.println("(5) Razer - $1599.99");
                     System.out.println("(6) I would not like a laptop.");
                     int laptop = scanLaptop.nextInt();
                     System.out.println(""); // Spacing
@@ -161,7 +161,7 @@ public class Client {
                 System.out.println("");
 
                 LaptopOrder laptopOrder = new LaptopOrder(builder, laptopType);
-                consultant.takeOrder(laptopOrder); // WHERE IS THIS COMING FROM WHY NO WORK
+                consultant.takeOrder(laptopOrder);
             }
 
             else{
