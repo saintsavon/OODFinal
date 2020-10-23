@@ -10,6 +10,6 @@ public class BrowsingStation extends Desktop {
 
     @Override
     public double cost() {
-        return 1000; // Temp price for casual work station
+        return 1000; 
     }
 }

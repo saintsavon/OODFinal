@@ -10,6 +10,6 @@ public class GamingStation extends Desktop {
 
     @Override
     public double cost() {
-        return 2000; // Temp price for high end gaming station
+        return 2000; 
     }
 }

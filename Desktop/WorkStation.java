@@ -10,6 +10,6 @@ public class WorkStation extends Desktop {
 
     @Override
     public double cost() {
-        return 3000; // Temp price for high end work station
+        return 3000; 
     }
 }
