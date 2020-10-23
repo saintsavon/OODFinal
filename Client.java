@@ -18,7 +18,6 @@ public class Client {
             System.out.println("(3) No thanks, I'm done!");
 
             int a = scanner.nextInt();
-            scanner.close(); // Closing resource leak
             if(a==1) {
                 ArrayList<String> storageList = new ArrayList<>();
                 ArrayList<String> waterCoolList = new ArrayList<>();
@@ -67,7 +66,6 @@ public class Client {
                     System.out.println("(4) I have chosen my storage amount.");
 
                     int value = scan.nextInt();
-                    scan.close();
                     if (value == 1) {
                         storageList.add("500GB");
                         System.out.println("You have chosen a 500GB SSD.");
@@ -93,7 +91,6 @@ public class Client {
                     System.out.println("(4) I would not like water cooling/ have finished selecting my parts.");
 
                     int value = scan2.nextInt();
-                    scan2.close(); // Closing scanner resource leak
                     if (value == 1) {
                         waterCoolList.add("CPUCool");
                         System.out.println("You have chosen to watercool your CPU.");
@@ -122,7 +119,6 @@ public class Client {
                     System.out.println("(5) Razer - $159.99");
                     System.out.println("(6) I would not like a laptop.");
                     int laptop = scanLaptop.nextInt();
-                    scanLaptop.close(); // Closing resource leaks
                     if(laptop==1){
                         laptopType="Lenovo";
                         System.out.println("You have chosen the Lenovo laptop.");
