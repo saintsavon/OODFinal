@@ -2,7 +2,7 @@ package Desktop.DesktopDecorator;
 
 import Desktop.Desktop;
 
-public abstract class GPUCool extends WaterCoolDecorator {
+public class GPUCool extends WaterCoolDecorator {
     Desktop desktop;
 
     public GPUCool(Desktop desktop) {

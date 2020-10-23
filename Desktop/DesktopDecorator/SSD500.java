@@ -2,7 +2,7 @@ package Desktop.DesktopDecorator;
 
 import Desktop.Desktop;
 
-public abstract class SSD500 extends StorageDecorator {
+public class SSD500 extends StorageDecorator {
     Desktop desktop;
 
     public SSD500(Desktop desktop) {

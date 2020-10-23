@@ -2,7 +2,7 @@ package Desktop.DesktopDecorator;
 
 import Desktop.Desktop;
 
-public abstract class CPUGPUCool extends WaterCoolDecorator {
+public class CPUGPUCool extends WaterCoolDecorator {
     Desktop desktop;
 
     public CPUGPUCool(Desktop desktop) {
