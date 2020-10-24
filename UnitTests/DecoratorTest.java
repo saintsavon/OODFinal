@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import Desktop.*;
 
-class decoratorTest {
+class DecoratorTest {
 	
 	String description = "Casual Browsing Desktop";
 

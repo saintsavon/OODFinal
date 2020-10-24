@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import Laptop.MSI;
 
-public class factoryCostTest {
+public class FactoryTest {
 	
 
 	@Test
