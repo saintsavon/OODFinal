@@ -32,11 +32,11 @@ public class Razer extends WindowsLaptop {
         String answer = getUserInput();
 
         if (answer.toLowerCase().startsWith("y")){
-            cost = cost + 125; // This needs to be unified in some way
+            cost = cost + 125;
             return true;
         }
         else {
-            return false; // Does this need curly braces
+            return false;
         }
     }
 

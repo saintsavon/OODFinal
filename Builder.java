@@ -19,7 +19,7 @@ public class Builder {
     Laptop laptop;
 
     public void getOrder(String factoryType){
-        if (factoryType.equalsIgnoreCase("Desktop")){ // Not sure if Desktop should be Desktop or the individual desktop types
+        if (factoryType.equalsIgnoreCase("Desktop")){ 
             System.out.println(desktopType + " order received.");
 
             DesktopFactory factory = new DesktopFactory();

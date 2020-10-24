@@ -12,7 +12,7 @@ public class DesktopFactory {
             return new GamingStation();
         }
         else if(desktopType.equals("Casual Browsing Desktop")){
-            return new BrowsingStation(); // This is new
+            return new BrowsingStation();
         }
         return null;
     }

@@ -74,7 +74,7 @@ public class Client {
                     } else if (value == 2) {
                         storageList.add("1TB");
                         System.out.println("You have chosen a 1TB SSD.");
-                    }else if (value == 3) { // Added third component choice here
+                    }else if (value == 3) { 
                         storageList.add("2TB");
                     }
                      else break;
@@ -94,7 +94,7 @@ public class Client {
                     System.out.println("(4) I would not like water cooling/ have finished selecting my parts.");
 
                     int value = scan2.nextInt();
-                    System.out.println(""); // Spacing
+                    System.out.println(""); 
 
                     if (value == 1) {
                         waterCoolList.add("CPUCool");
@@ -119,7 +119,7 @@ public class Client {
                 waterCoolArr = waterCoolList.toArray(waterCoolArr);
 
                 DesktopBuild desktopBuild = new DesktopBuild(builder, desktopType, storageArr, waterCoolArr);
-                consultant.takeOrder(desktopBuild); // Why no working
+                consultant.takeOrder(desktopBuild); 
             }
 
             else if(a==2) {
@@ -134,7 +134,7 @@ public class Client {
                     System.out.println("(5) Razer - $1599.99");
                     System.out.println("(6) I would not like a laptop.");
                     int laptop = scanLaptop.nextInt();
-                    System.out.println(""); // Spacing
+                    System.out.println(""); 
                     if(laptop==1){
                         laptopType="Lenovo";
                         System.out.println("You have chosen the Lenovo laptop.");

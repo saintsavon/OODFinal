@@ -30,7 +30,7 @@ public abstract class WindowsLaptop implements Laptop {
     public abstract void addCustom();
 
     boolean customerWantsCustomPart(){
-        return true; // Update this to ask user, so it is not mandatory
+        return true;
     }
     
 }

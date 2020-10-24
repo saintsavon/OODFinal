@@ -32,11 +32,11 @@ public class Lenovo extends WindowsLaptop {
         String answer = getUserInput();
 
         if (answer.toLowerCase().startsWith("y")){
-            cost = cost + 75; // This needs to be unified in some way
+            cost = cost + 75;
             return true;
         }
         else {
-            return false; // Does this need curly braces
+            return false;
         }
     }
 

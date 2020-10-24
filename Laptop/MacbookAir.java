@@ -27,11 +27,11 @@ public class MacbookAir extends MacLaptop {
         String answer = getUserInput();
 
         if (answer.toLowerCase().startsWith("y")){
-            cost = cost + 249.99; // This needs to be unified in some way
+            cost = cost + 249.99;
             return true;
         }
         else {
-            return false; // Does this need curly braces
+            return false;
         }
     }
 
