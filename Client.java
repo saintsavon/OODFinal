@@ -54,14 +54,13 @@ public class Client {
                         continue;
                     }
                 }
-                scanner.close();
                 System.out.println("");
 
                 // Storage options selections loop
                 System.out.println("-------------------- ADDITIONAL COMPONENTS --------------------\n");
                 Scanner scan = new Scanner(System.in);
                 for (int i = 0; i < 2; i++) {
-                    System.out.println("-------------------- Storage Amounts --------------------");
+                    System.out.println("-------------------- Storage Amounts (Up to 2) --------------------");
                     System.out.println("(1) 500GB SSD - $100.");
                     System.out.println("(2) 1TB SSD - $175.");
                     System.out.println("(3) 2TB SSD - $270.");
@@ -79,7 +78,6 @@ public class Client {
                     }
                      else break;
                 }
-                scan.close();
 
                 System.out.println("Your storage amount selections have been saved.");
                 System.out.println("\n");
@@ -99,15 +97,17 @@ public class Client {
                     if (value == 1) {
                         waterCoolList.add("CPUCool");
                         System.out.println("You have chosen to watercool your CPU.");
+                        break;
                     } else if (value == 2) {
                         waterCoolList.add("GPUCool");
                         System.out.println("You have chosen to watercool your GPU.");
+                        break;
                     } else if (value == 3) {
                         waterCoolList.add("CPUGPUCool");
                         System.out.println("You have chosen to watercool your CPU & GPU.");
+                        break;
                     } else break;
                 }
-                scan2.close();
 
                 System.out.println("Your watercooling selections have been saved.");
                 System.out.println("");
@@ -159,7 +159,6 @@ public class Client {
                         break;
                     }
                 }
-                scanLaptop.close();
                 
                 System.out.println("The selection of laptops is completed.");
                 System.out.println("");
