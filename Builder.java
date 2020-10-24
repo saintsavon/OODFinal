@@ -1,7 +1,9 @@
 // Receiver
 
 import Laptop.Laptop;
+import Laptop.LaptopFactory;
 import Desktop.Desktop;
+import Desktop.DesktopFactory;
 import Desktop.DesktopDecorator.*;
 import Desktop.DesktopDecorator.SSD500;
 import Desktop.DesktopDecorator.SSD1TB;

@@ -1,6 +1,4 @@
-
-import Desktop.*;
-
+package Desktop;
 public class DesktopFactory {
 
     public Desktop buildDesktop(String desktopType) {

@@ -1,9 +1,8 @@
-
-import Laptop.*;
+package Laptop;
 
 public class LaptopFactory {
 
-    public Laptop chooseLaptop(String laptopType) { // Replaces makeBeverage and beverageType
+    public Laptop chooseLaptop(String laptopType) {
         if (laptopType.equals(null)){
             return null;
         }

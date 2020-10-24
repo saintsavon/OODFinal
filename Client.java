@@ -25,7 +25,7 @@ public class Client {
                 String desktopType = null;
                 String answer = null;
 
-                while (true) { // Make sure this functions as intended
+                while (true) { 
                     System.out.println("Which desktop do you want?");
                     System.out.println("(1) High End Work Station - Starting at: $3000");
                     System.out.println("(2) High End Gaming Desktop - Starting at: $2000");
@@ -39,7 +39,7 @@ public class Client {
                     }
 
                     if (answer.equals("1")) {
-                        desktopType = "High End Work Station Desktop"; // Make sure this is consistent throughout
+                        desktopType = "High End Work Station Desktop"; 
                         System.out.println("You have chosen the high end work station.");
                         break;
                     } else if (answer.equals("2")) {
